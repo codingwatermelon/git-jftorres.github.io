@@ -1,15 +1,15 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
+    "name": "Joaquin Torres",
     "label": "Student",
     "picture": "https://techfolios.github.io/template/images/molly.png",
-    "email": "molly@hawaii.edu",
-    "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "email": "jftorres@hawaii.edu",
+    "phone": "808-284-8372",
+    "website": "https://git-jftorres.github.io",
+    "summary": "My name is Joaquin Torres. Call me Jack. I'm a Computer Science student striving to get a BS degree by Spring 2019.",
     "location": {
       "address": "",
-      "postalCode": "96822",
+      "postalCode": "96817",
       "city": "Honolulu",
       "countryCode": "USA",
       "region": "Hawaii"
@@ -17,13 +17,13 @@
     "profiles": [
       {
         "network": "github",
-        "username": "mmaluhia",
-        "url": "http://github.com/changeme"
+        "username": "git-jftorres",
+        "url": "http://github.com/git-jftorres"
       },
       {
         "network": "linkedin",
-        "username": "mollymaluhia",
-        "url": "http://linkedin.com/in/changeme"
+        "username": "jftorres",
+        "url": "https://www.linkedin.com/in/jack-torres-a2b910154/"
       },
       {
         "network": "twitter",
@@ -39,19 +39,17 @@
   },
   "interests": [
     {
-      "name": "internet of things",
-      "keywords": [
-        "Arduino",
-        "TI MSP430"
-      ]
-    },
-    {
-      "name": "data mining",
+      "name": "cybersecurity",
       "keywords": [
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "network monitoring",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "virtualization",
       "keywords": [
       ]
     }
@@ -65,8 +63,7 @@
         "C++",
         "Java",
         "Javascript",
-        "Assembly",
-        "Common Lisp"
+        "Bash"
       ]
     },
     {
@@ -74,7 +71,10 @@
       "level": "",
       "keywords": [
         "MacOS",
-        "Ubuntu",
+        "CentOS 7",
+        "Windows 7/8/10",
+        "Windows Server 2008/2012",
+        "Active Directory",
         "Git/GitHub",
         "g++",
         "TI LaunchPad"
@@ -84,9 +84,9 @@
   "education": [
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
+      "area": "Computer Science (expected Spring, 2019)",
       "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "startDate": "2015-09-01",
       "endDate": "Present",
       "gpa": "",
       "courses": [
@@ -95,27 +95,15 @@
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
-      "website": "",
+      "company": "UH TASI, Telecommunications and Social Informatics Research Program",
+      "position": "System Operator",
+      "website": "http://www.uhtasi.org/",
       "startDate": "2015-08-01",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "Implement and maintain systems necessary for everyday workflow",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
-      ]
-    },
-    {
-      "company": "UH Information Technology Services",
-      "position": "Help Desk Consultant",
-      "website": "http://www.hawaii.edu/its/",
-      "startDate": "2015-01-01",
-      "endDate": "2016-03-15",
-      "summary": "",
-      "highlights": [
-        "Troubleshoot software, hardware and networking issues over the phone",
-        "Answer phone and email responses to the ITS Help Desk"
+        "Extensive work with Icinga2, open source network monitoring solution",
+        "Fluent with CentOS 7"
       ]
     }
   ],
