@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/355prog.jpg
 title: Developing an Authentication system
-permalink: projects/cotton
+permalink: projects/authentication
 # All dates must be YYYY-MM-DD format!
 date: 2017-11-17
 labels:
