@@ -17,6 +17,6 @@ I developed a text-based database application which held fake records and accoun
 
 Below is an example output of my program:
 
-<img class="ui image" src="{{ site.baseurl }}/images/355progpic1.png">
+<img class="ui image" src="https://git-jftorres.github.io/images/355progpic1.png">
 
 Although relatively simple and also a school assignment, it was fun the implement and I also learned a lot from doing so.
