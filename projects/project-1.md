@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/icinga2.png
 title: Icinga2, network monitor
-permalink: projects/micromouse
+permalink: projects/icinga2
 # All dates must be YYYY-MM-DD format!
 date: 2016-01-01
 labels:
