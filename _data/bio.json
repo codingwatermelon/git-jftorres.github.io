@@ -65,14 +65,14 @@
       "name": "Toolsets/OS",
       "level": "",
       "keywords": [
-        "MacOS",
+        "MacOS/X",
         "CentOS 7",
         "Windows 7/8/10",
         "Windows Server 2008/2012",
+        "Kali Linux",
         "Active Directory",
         "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "g++"
       ]
     }
   ],
@@ -97,9 +97,11 @@
       "endDate": "Present",
       "summary": "Implement and maintain systems necessary for everyday workflow",
       "highlights": [
-        "Extensive work with Icinga2, open source network monitoring solution",
+        "Extensive work with Icinga2, open source network monitoring solution, which includes working with protocols like SNMP and SSH and databases like MariaDB (MySQL)",
         "Integrated Icinga2 with Grafana/InfluxDB for graphing performance data",
-        "Fluent with CentOS 7 in terms of basic networking, scheduling cron jobs, and using VI and bash"
+        "Fluent with CentOS 7 in terms of basic networking, scheduling cron jobs, using VI and bash for scripting, and using ClamAV for antivirus",
+        "Minor involvement with vRealize Operations Manager, a monitoring software for vCenter/vSphere for managing virtual machines",
+        "Used Mirth Connect for processing large amounts of data (HL7 messages)"
       ]
     }
   ],
