@@ -24,6 +24,11 @@
         "network": "linkedin",
         "username": "jftorres",
         "url": "https://www.linkedin.com/in/jack-torres-a2b910154/"
+      },
+      {
+        "network": "email",
+        "username": "jftorres@hawaii.edu",
+        "url": "jftorres@hawaii.edu"
       }
     ]
   },
