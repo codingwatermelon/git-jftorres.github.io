@@ -18,12 +18,12 @@ Icinga2 is an open source network monitoring software. Being open source makes i
 From most basic to more complex, I have configured the networking and firewall settings of the Cent OS 7 VMs that my Icinga2 instances are hosted on, installed all of the software necessary for the monitoring system (which includes things like MySQL, various plugins needed for device queries, Postfix, etc.), configured email alerting, programmed scripts in Bash for device queries, integrated Icinga2 with Grafana, a graphing software for graphing performance data, and the list goes on. At first, I didn't realize the immense amount of work that Icinga2 would take to understand and implement, but it has come to a point of realization that network monitoring is no easy task.
 
 Below is an example of the Icinga2 web interface, something that I work with quite often (not my environment):
-<div class="ui small rounded images">
+<div class="ui medium rounded images">
   <img class="ui image" src="../images/icinga2pic1.jpg">
 </div>
 
 I've also integrated the web interface with a smaller, more concise dashboard interface using a software called Dashing (also not my environment):
-<div class="ui small rounded images">
+<div class="ui medium rounded images">
   <img class="ui image" src="../images/icinga2pic2.png">
 </div>
 
