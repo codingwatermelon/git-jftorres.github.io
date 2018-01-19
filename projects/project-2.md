@@ -1,25 +1,27 @@
 ---
 layout: project
 type: project
-image: images/vacay-square.png
-title: Vacay
-permalink: projects/vacay
+image: images/scratch.png
+title: Scratch Platformer
+permalink: projects/scratch
 # All dates must be YYYY-MM-DD format!
-date: 2015-12-15
+date: 2018-01-02
 labels:
-  - Javascript
-  - Meteor
-  - MongoDB
-  - GitHub
-summary: A responsive web application for travel planning that my team developed in ICS 415.
+  - Scratch
+  - MIT
+summary: A beginner platformer developed in Scratch, an incredibly simplified language that uses visual blocks instead of just text. 
 ---
 
-<img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">
+<img class="ui medium right floated rounded image" src="../images/scratchpic1.png">
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+I created this platformer as an anniversary gift for my girlfriend this year. I developed it in Scratch so that I could try to teach her how to code. Scratch is very visually pleasing, and a very beginner-friendly language that any person new to coding could look at and understand. In fact, Scratch was how I first learned how to code.
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
+The picture below shows what the coding process is like when developing in Scratch. There is a menu on the left side which gives you all your "blocks", and on the right side is where you place your blocks. As you can see, it's very easy to follow since the blocks are so brightly colored and things like "if" statements are easily identified.
 
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
- 
-Source: <a href="https://github.com/theVacay/vacay"><i class="large github icon"></i>theVacay/vacay</a>
+Admittedly, I did not write most of the code in the project as there was already code out there for platformers using Scratch. Most of my part in the whole developing of this project was the artistic side of the platformer, which including drawing the different sprites for the main character and designing the maps for my girlfriend to play through. Below is an example of the default platformer, without all the artsy stuff yet:
+
+<img class="ui medium right floated rounded image" src="../images/scratchpic2.png">
+
+All in all, the project was a fun experience for me and my girlfriend did end up learning something and enjoying it. I have some future projects in mind as well!
+
+Scratch is available as an online editor at https://scratch.mit.edu/, check it out if you are interested.
