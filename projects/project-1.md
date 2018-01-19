@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/icinga2.png
+image: images/icinga2.jpg
 title: Icinga2, network monitor
 permalink: projects/icinga2
 # All dates must be YYYY-MM-DD format!
