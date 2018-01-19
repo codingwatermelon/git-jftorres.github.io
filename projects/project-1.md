@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/icinga2.jpg
+image: images/icinga2.png
 title: Icinga2, network monitor
 permalink: projects/micromouse
 # All dates must be YYYY-MM-DD format!
@@ -24,7 +24,7 @@ Below is an example of the Icinga2 web interface, something that I work with qui
 
 I've also integrated the web interface with a smaller, more concise dashboard interface using a software called Dashing (also not my environment):
 <div class="ui small rounded images">
-  <img class="ui image" src="../images/icinga2pic2.png">
+  <img class="ui image" src="../images/icinga2pic2.jpg">
 </div>
 
 Overall, I'd say working with Icinga2 has made me appreciate network monitoring and system administrator tasks, something that I would consider doing for a career.
