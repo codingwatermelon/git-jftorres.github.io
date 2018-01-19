@@ -27,7 +27,7 @@ Admittedly, I did not write most of the code in the project as there was already
 
 
 
-<img class="ui medium right floated rounded image" src="../images/scratchpic2.PNG">
+<img class="ui centered medium image" src="../images/scratchpic2.PNG">
 
 
 
