@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: https://git-jftorres.github.io/images/icinga2.png
+image: images/icinga2.png
 title: Icinga2, network monitor
 permalink: projects/micromouse
 # All dates must be YYYY-MM-DD format!
