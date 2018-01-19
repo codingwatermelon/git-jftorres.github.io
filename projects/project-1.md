@@ -19,12 +19,12 @@ From most basic to more complex, I have configured the networking and firewall s
 
 Below is an example of the Icinga2 web interface, something that I work with quite often (not my environment):
 <div class="ui small rounded images">
-  <img class="ui image" src="../images/icinga2pic1.png">
+  <img class="ui image" src="../images/icinga2pic1.jpg">
 </div>
 
 I've also integrated the web interface with a smaller, more concise dashboard interface using a software called Dashing (also not my environment):
 <div class="ui small rounded images">
-  <img class="ui image" src="../images/icinga2pic2.jpg">
+  <img class="ui image" src="../images/icinga2pic2.png">
 </div>
 
 Overall, I'd say working with Icinga2 has made me appreciate network monitoring and system administrator tasks, something that I would consider doing for a career.
