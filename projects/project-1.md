@@ -5,7 +5,7 @@ image: images/icinga2.png
 title: Icinga2, network monitor
 permalink: projects/micromouse
 # All dates must be YYYY-MM-DD format!
-date: 2016-01-01 - Present
+date: 2016-01-01
 labels:
   - Network Monitoring
   - Cybersecurity
