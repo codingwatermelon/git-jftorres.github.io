@@ -19,4 +19,4 @@ Below is an example output of my program:
 
 <img class="ui image" src="https://git-jftorres.github.io/images/355progpic1.png">
 
-Although relatively simple and also a school assignment, it was fun the implement and I also learned a lot from doing so.
+Although relatively simple and also a school assignment, it was fun the implement and I also learned a lot from doing so, including how use hashed passwords to authenticate against a password file, getting creative with functions for implementing the actual database side of the application, and running into user interface issues that I wouldn't have thought of if I hadn't done this assignment (like spacing of the menu, handling error messages gracefully, and so on).
