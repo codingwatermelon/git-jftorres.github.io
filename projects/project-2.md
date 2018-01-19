@@ -23,6 +23,14 @@ Admittedly, I did not write most of the code in the project as there was already
 
 <img class="ui medium right floated rounded image" src="../images/scratchpic2.PNG">
 
+
+
+
+
+
+
+
+
 All in all, the project was a fun experience for me and my girlfriend did end up learning something and enjoying it. I have some future projects in mind as well!
 
 Scratch is available as an online editor at https://scratch.mit.edu/, check it out if you are interested.
