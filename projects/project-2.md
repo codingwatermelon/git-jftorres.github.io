@@ -21,6 +21,12 @@ The picture below shows what the coding process is like when developing in Scrat
 
 Admittedly, I did not write most of the code in the project as there was already code out there for platformers using Scratch. Most of my part in the whole developing of this project was the artistic side of the platformer, which including drawing the different sprites for the main character and designing the maps for my girlfriend to play through. Below is an example of the default platformer, without all the artsy stuff yet:
 
+
+
+
+
+
+
 <img class="ui medium right floated rounded image" src="../images/scratchpic2.PNG">
 
 
