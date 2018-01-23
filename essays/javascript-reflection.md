@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: Reflection on Javascript
+title: Javascript: My First Experience
 # All dates must be YYYY-MM-DD format!
 date: 2018-01-19
 labels:
@@ -9,7 +9,7 @@ labels:
   - Javascript
 ---
 
-<img class="ui centered large image" src="../images/learn-javascript.png">
+<img class="ui centered medium image" src="../images/learn-javascript.png">
 
 ### First Impressions on Javascript
 At first, Javascript was very familiar and felt similar to C/C++. Then, throughout the module (specifically the FreeCodeCamp part), it got very interesting, especially regarding array manipulation. This was my first time with Javascript, but since I have experience in Bash scripting, there are similarities between the two that helped me out, such as the variable declarations. After some time however, I was getting used to some of the differences between Javascript and other languages that I know and I felt like I could definitely use Javascript if I needed to use it for something else, like a work project.
