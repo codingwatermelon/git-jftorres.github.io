@@ -20,6 +20,7 @@ Here's an example of a "smart" question on StackOverflow:
 
 #### How do JavaScript closures work?
 > How would you explain JavaScript closures to someone with a knowledge of the concepts they consist of (for example functions, variables and the like), but does not understand closures themselves?
+
 > I have seen the Scheme example given on Wikipedia, but unfortunately it did not help.
 
 This is a great example of a "smart" question because firstly, they present the issue concisely (he/she doesn't know what a JavaScript closure is), secondly, they use proper grammar and punctuation, and thirdly, they provide what they have done thus far in trying to find a solution to their problem (he/she tried to understand the Wikipedia entry, but couldn't). These types of questions are generally rewarded with higher quality answers because the questioner took the time to research their issue beforehand (the question has 88 answers).
@@ -27,8 +28,11 @@ Here's an example of a not-so-smart question on StackOverflow:
 
 #### How the lock file works?(PHP)
 > `$f = fopen('lock', 'w') or die ('Cannot create lock file');`
+
 > `if = (flock($f, LOCK_EX | LOCK_NB)) {`
+
 > `}`
+
 > how this piece of code can block the next php execution? should I put the code inside the if statement? or outside?
 
 This question violates a handful of rules from Eric Raymond's article. First of all, the person who asked the question did not proofread their question, and it is chock full of grammatical errors. Secondly, the question does not actually seem to convey the questioner's knowledge of the subject (whether or not he/she knows a little bit of the subject or not at all), making it difficult for any prospective answerers to give a customized response. Thirdly, the overall tone of the question does not seem so friendly or professional. In fact, the questioner goes on to answer a comment which asked "How much do and don't you understand about locks...?" to which they reply "thats why i asked".
