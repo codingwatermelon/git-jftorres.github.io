@@ -8,35 +8,46 @@ labels:
   - Software Engineering
 ---
 
-<img class="ui centered medium image" src="../images/questionspic1.jpg">
+<img class="ui centered medium image" src="../images/codingpic1.jpg">
 
-### A Preface
-As budding software engineers, we know that not everything can be explained for a homework assignment by a professor within a lecture period, and often times we are stuck with having to search the web for solutions to whatever problem we might run into. Sometimes even scouring Google and endless forums for a solution is not enough and we end up having to post a thread on a forum relevant to our problem. In order to not waste time for all parties (the asker and the answerer(s)), questions must be phrased in a way that will convey the issue concisely and efficiently (i.e. in a "smart" way).  
+### Introduction
+When I first starting learning how to program, every class that I took had different ways of keeping code tidy and neat. Some classes would enforce these rules, while others would simply not care; taking a "if it ain't broken, then don't fix it" approach. Progressing as a programmer has shown me that it is indeed important to have some kind of standard for writing code.
 
-### The Benefits of Asking "Smart" Questions
-Asking "smart" questions is outlined by Eric Raymond in his article, "[How to Ask Questions The Smart Way](http://www.catb.org/esr/faqs/smart-questions.html)". He gets into the nitty-gritty details of the process; the purpose of this essay is to stress the importance of being able to ask "smart" questions. Firstly, what is a "smart" question? Simply put, a "smart" question is one in which the questioner is able to concisely and formally present an issue to which people will be able to understand, assess, and hopefully remediate the situation without too much back and forth discussion between the questioner and answerer. 
+### Reasons why a coding standard is needed
+Now that I think of it, a coding standard is something that I wish would've been more emphasized in ICS curriculum. As mentioned above, the focus on writing clean and neat code was sporadic for different classes which makes learning how to write code and visiting completely new concepts kind of difficult. By having some kind of coding standard, teachers and professors are able to progress healthy habits for the industry as well; nobody wants a programmer on their team that can't write readable code.
 
-Here's an example of a "smart" question on StackOverflow:
+I have always found it useful to have some kind of standard when writing my own code so that it could be readable to not only the professor or TA that was grading it, but so that classmates and peers could read it and collaborate with me. Being somewhat of a grammar geek, nothing infuriates me more than improperly formatted indentation in code. An example of this is shown below:
 
-##### How do JavaScript closures work?
-> How would you explain JavaScript closures to someone with a knowledge of the concepts they consist of (for example functions, variables and the like), but does not understand closures themselves?
+```
+function test() {
+let i = 0;
 
-> I have seen the Scheme example given on Wikipedia, but unfortunately it did not help.
+while (i < 100) {
+console.log("pls reformat me");
+}
 
-This is a great example of a "smart" question because firstly, they present the issue concisely (he/she doesn't know what a JavaScript closure is), secondly, they use proper grammar and punctuation, and thirdly, they provide what they have done thus far in trying to find a solution to their problem (he/she tried to understand the Wikipedia entry, but couldn't). These types of questions are generally rewarded with higher quality answers because the questioner took the time to research their issue beforehand (the question has 88 answers).
+return 0;
+}
+```
 
-Here's an example of a not-so-smart question on StackOverflow:
+Obviously, this is a very simple example of bad code (it could be way worse). I recently adopted my coding standard from my ICS 212 C/C++ class, that would reformat the above code to something like this:
 
-##### How the lock file works?(PHP)
-> `$f = fopen('lock', 'w') or die ('Cannot create lock file');`
+```
+function test() {
 
-> `if = (flock($f, LOCK_EX | LOCK_NB)) {`
+  let i = 0;
+  
+  while (i < 100) {
+  
+    console.log("reformatted!");
+  
+  }
+  
+  return 0;
+  
+}
+```
 
-> `}`
+Although it's a few lines longer than the original code, it's 100 times more readable and much easier to follow, especially in a case where there are more than just 10 lines of code.
 
-> how this piece of code can block the next php execution? should I put the code inside the if statement? or outside?
-
-This question violates a handful of rules from Eric Raymond's article. First of all, the person who asked the question did not proofread their question, and it is chock full of grammatical errors. Secondly, the question does not actually seem to convey the questioner's knowledge of the subject (whether or not he/she knows a little bit of the subject or not at all), making it difficult for any prospective answerers to give a customized response. Thirdly, the overall tone of the question does not seem so friendly or professional. In fact, the questioner goes on to answer a comment which asked "How much do and don't you understand about locks...?" to which they reply "thats why i asked".
-
-### Conclusion
-Asking questions is important, but asking smart questions is even more important. Not only are smart questions important to be asked on the Internet, but also to employers and supervisors. Being able to communicate an issue and find a solution efficiently is of utmost importance to a career. 
+While using ESLint with IntelliJ, it can get a little bit frustrating when it tells you some spaces could be removed or that a function needs to have a better name, but I think that these little nitpicky things are needed. I like to think of ESLint as my future supervisor; of course they want the best code because they want to be able to read it for themselves and have your coworkers work off of it as well. In this way, ESLint is a necessary evil; most people probably do not care for it, but know that it is good to have code checked off using it.
