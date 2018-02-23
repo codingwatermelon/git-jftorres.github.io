@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: UI Frameworks: Should You Use Them?
+title: UI Frameworks: Should You Use Them
 # All dates must be YYYY-MM-DD format!
 date: 2018-02-22
 labels:
