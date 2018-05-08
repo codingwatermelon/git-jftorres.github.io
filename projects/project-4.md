@@ -8,7 +8,7 @@ permalink: projects/manoa311
 date: 2018-5-6-18
 labels:
   - Manoa311
-  - ICS314 Project
+  - ICS314
   - Meteor
 summary: My ICS 314 Final group project named Manoa311.
 ---
