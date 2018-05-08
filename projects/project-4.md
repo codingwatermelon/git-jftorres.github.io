@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/manoa311.PNG
+image: images/manoa311logo.PNG
 title: Manoa 311
 permalink: projects/manoa311
 # All dates must be YYYY-MM-DD format!
