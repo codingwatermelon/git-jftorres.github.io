@@ -5,7 +5,7 @@ image: images/manoa311.PNG
 title: Manoa 311
 permalink: projects/manoa311
 # All dates must be YYYY-MM-DD format!
-date: 2018-5-6-18
+date: 2018-05-06
 labels:
   - Manoa311
   - ICS314
