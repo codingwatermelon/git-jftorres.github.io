@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/manoa311.png
+image: images/manoa311.PNG
 title: Manoa 311
 permalink: projects/manoa311
 # All dates must be YYYY-MM-DD format!
@@ -19,4 +19,4 @@ The goal of the application was to provide UH students, faculty, and administrat
 
 Here's what the landing page looks like:
 
-<img class="ui image" src="https://git-jftorres.github.io/images/manoa311landing.png">
+<img class="ui image" src="https://git-jftorres.github.io/images/manoa311landing.PNG">
