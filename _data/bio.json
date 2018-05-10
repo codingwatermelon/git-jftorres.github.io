@@ -24,6 +24,11 @@
         "network": "linkedin",
         "username": "jftorres",
         "url": "https://www.linkedin.com/in/jack-torres-a2b910154/"
+      },
+      {
+        "network": "monitoring-portal",
+        "username": "watermelon",
+        "url": "https://monitoring-portal.org/u/watermelon/activity"
       }
     ]
   },
@@ -39,7 +44,27 @@
       ]
     },
     {
+      "name": "data visualization",
+      "keywords": [
+      ]
+    },
+    {
       "name": "virtualization",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "web development",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "automation",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "MacOS",
       "keywords": [
       ]
     }
@@ -53,11 +78,13 @@
         "C++",
         "Java",
         "Javascript",
-        "Bash"
+        "Bash",
+        "HTML/CSS, Semantic UI React",
+        "MeteorJS"
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Operating Systems",
       "level": "",
       "keywords": [
         "MacOS/X",
@@ -65,9 +92,28 @@
         "Windows 7/8/10",
         "Windows Server 2008/2012",
         "Kali Linux",
+        "Synology DS200 Series"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "",
+      "keywords": [
+        "VMware vCenter",
+        "VMware vRealize Operations Manager",
         "Active Directory",
+        "ELK Stack",
+        "Icinga2",
+        "Grafana",
         "Git/GitHub",
-        "g++"
+        "Oracle DBMS",
+        "InfluxDB",
+        "Java DB (Derby)",
+        "MySQL (MariaDB)",
+        "FileZilla/WinSCP",
+        "VeraCrypt",
+        "Mirth Connect",
+        "ClamAV"
       ]
     }
   ],
@@ -93,7 +139,7 @@
       "summary": "Implement and maintain systems necessary for everyday workflow",
       "highlights": [
         "Extensive work with Icinga2, open source network monitoring solution, which includes working with protocols like SNMP and SSH and databases like MariaDB (MySQL)",
-        "Integrated Icinga2 with Grafana/InfluxDB for graphing performance data",
+        "Integrated Icinga2 with Grafana/InfluxDB for graphing and visualizing performance data and NagVis for node mapping (all open source)",
         "Fluent with CentOS 7 in terms of basic networking, scheduling cron jobs, using VI and bash for scripting, and using ClamAV for antivirus",
         "Minor involvement with vRealize Operations Manager, a monitoring software for vCenter/vSphere for managing virtual machines",
         "Used Mirth Connect for processing large amounts of data (HL7 messages)"
