@@ -22,3 +22,7 @@ For a link to the actual application, click here: [manoa311 - Meteor App](http:/
 Here's what the landing page looks like:
 
 <img class="ui large image" src="https://git-jftorres.github.io/images/manoa311landing.PNG">
+
+I came up with the project idea as a whole and designed the initial landing page. I also took a project manager's role during the project, making sure that everyone had something to do and were progressing on the tasks assigned to them. A lot of the project's features came from my ideas, but the majority of the implementation came from my group members, Michael K in particular. He figured out the sorting/filtering features and also managed the mongoDB and Meteor Galaxy part of the project. Most of my contribution was with the interface and how things should look as thought of in my mind.
+
+I learned a lot from this project. I discovered how fun it was to work consistently and collaboratively on a single project. This project wouldn't have been possible without GitHub, and it's no wonder why it's so widely used today. I also discovered how awesome it was to bring an idea of mine to life in a matter of weeks. If I was on my own, I wouldn't have been able to do so nearly as quickly. This project gives me inspiration for other future projects, hopefully collaborative as well.
