@@ -113,8 +113,19 @@
         "FileZilla/WinSCP",
         "VeraCrypt",
         "Mirth Connect",
-        "ClamAV"
+        "ClamAV",
+        "Visio 2016"
       ]
+    },
+    {
+      "name": "Favorite IDEs and Text Editors",
+      "level": "",
+      "keywords": [
+        "IntelliJ IDEA",
+        "Netbeans",
+        "Visual Studio",
+        "vi/vim",
+        "Atom"
     }
   ],
   "education": [
