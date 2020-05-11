@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/mm.jpg
+image: images/mm.png
 title: How to make a Magic Dashboard
 permalink: projects/magicdashboard
 # All dates must be YYYY-MM-DD format!
