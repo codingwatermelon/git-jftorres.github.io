@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Jack Torres",
-    "label": "Student",
+    "label": "Aspiring video maker",
     "picture": "https://git-jftorres.github.io/images/profile.png",
     "email": "jftorres@hawaii.edu",
     "phone": "",
@@ -16,6 +16,16 @@
     },
     "profiles": [
       {
+        "network": "youtube",
+        "username": "Jack of All Trades",
+        "url": "https://www.youtube.com/channel/UCqA6mCGNMsh84XOwV02N5Rw?view_as=subscriber"
+      },
+      {
+        "network": "instagram",
+        "username": "masterofsome__",
+        "url": "https://www.instagram.com/masterofsome__/"
+      },
+      {
         "network": "github",
         "username": "git-jftorres",
         "url": "http://github.com/git-jftorres"
@@ -27,11 +37,19 @@
       }
     ]
   },
-  "Nothing to see here": [
+  "Education": [
     {
-      "name": "come back later?",
+      "name": "Nothing to see here for now. Come back later?",
       "keywords": [
       ]
     }
- ]
+  ],
+  "interests": [
+    {
+      "name": "cool stuff",
+      "keywords": [
+
+      ]
+    }
+  ]
 }
