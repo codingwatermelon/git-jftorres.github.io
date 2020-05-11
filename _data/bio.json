@@ -2,7 +2,7 @@
   "basics": {
     "name": "Jack Torres",
     "label": "Aspiring video maker",
-    "picture": "https://git-jftorres.github.io/images/profile.png",
+    "picture": "https://git-jftorres.github.io/images/profile.jpg",
     "email": "jftorres@hawaii.edu",
     "phone": "",
     "website": "https://git-jftorres.github.io",
@@ -39,9 +39,7 @@
   },
   "Education": [
     {
-      "name": "Nothing to see here for now. Come back later?",
-      "keywords": [
-      ]
+      "institution": "Nothing to see here. Come back later?"
     }
   ],
   "interests": [
