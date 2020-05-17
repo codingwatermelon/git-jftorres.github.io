@@ -123,6 +123,7 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
   - Note: You can create these files outside of the Pi and transfer them to your Pi using WinSCP. Otherwise, you can create them directly:
   - `sudo vim mmstart.sh`
     - [mmstart.sh](../files/mmstart.sh)
+    
 ```
 #!/bin/bash
 cd ~/MagicMirror
