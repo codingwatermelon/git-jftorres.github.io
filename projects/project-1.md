@@ -123,7 +123,7 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
   - Note: You can create these files outside of the Pi and transfer them to your Pi using WinSCP. Otherwise, you can create them directly:
   - `sudo vim mmstart.sh`
     - [mmstart.sh](../files/mmstart.sh)
-    
+
 ```
 #!/bin/bash
 cd ~/MagicMirror
@@ -174,7 +174,56 @@ var config = {
 }
 ```
 
+  - **Important:** Whenever you edit the `config.js` file, you'll need to restart the MagicMirror software
+    - `pm2 restart mmstart`
+
   - Note: I'll provide my full `config.js` file at the end of this guide
 
-2. Modules
+  - To connect to the dashboard, open a web browser and type the following into the address bar:
+    - `http://<PiIPAddress>:8080`
+    - If your MagicMirror doesn't come up, you have a problem with your networking or the MagicMirror software isn't started
+    - **Note:** You should open the browser in Private or Incognito mode because I've found that in Firefox, it saves tons of trash data into the Firefox profiles folder if you don't which will quickly fill up your drive space.
+
+2. Installing Modules
+  - [Click here](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules) for a list of all MagicMirror 3rd party modules
+  - The 3rd party modules that I chose to use were:
+     - [MMM-MicrosoftToDo](https://github.com/thobach/MMM-MicrosoftToDo/) - a module to integrate your MS ToDo lists
+     - [MMM-SmartWebDisplay](https://github.com/AgP42/MMM-SmartWebDisplay) - a module you can use to display web pages in an embedded frame (I used this to display my security camera feed)
+     - [on-this-day](https://github.com/elliefairholm/on-this-day) - a module for displaying a random thing that happened sometime in the past on this day
+     - [MMM-BackgroundSlideshow](https://github.com/darickc/MMM-BackgroundSlideshow) - a module to display a picture in the background of the dashboard
+     - [MMM-AVStock](https://github.com/lavolp3/MMM-AVStock) - a module used to display stock prices
+  - To install modules, enter your `modules` folder
+    - `cd /home/pi/MagicMirror/modules`
+  - Clone the Github repository for the module you want to install
+    - `git clone <https://github.com/<module>`
+    - e.g., `git clone https://github.com/lavolp3/MMM-AVStock`
+  - Install dependencies for any Node components in the module
+    - `cd <module>`
+    - e.g., `cd MMM-AVStock`
+    - `npm install`
+3. Configuring Modules
+  - After installing, you'll need to edit the `config.js` file accordingly
+    - The recommended configuration settings are usually included in the Github repository README file
+  - Edit the `config.js` file
+    - `vim /home/pi/MagicMirror/config/config.js`
+  - Add any module configuration into the file, following the configuration structure
+    - e.g.,
+```
+{
+  //disabled:true,
+  module: "MMM-AVStock",
+  position: "top_right",
+  config: {
+    apiKey : "YOUR_ALPHAVANTAGE_KEY",
+    symbols : ["aapl", "GOOGL", "005930.KS"],
+  }
+},
+```
+
+  - After finished with editing the file, restart the MagicMirror software
+    - `pm2 restart mmstart`
+
+4. Troubleshooting
   - Developer Tools is your friend
+    - You can use developer tools to find syntax errors in the `config.js` file or to just figure out what a module is doing
+    - Right click on the webpage, *Inspect Element*, then open the *Console* tab
