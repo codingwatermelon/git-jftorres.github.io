@@ -13,7 +13,7 @@ summary: Using the popular Magic Mirror software for Raspberry Pis, I made a "Ma
 ---
 
 ### Introduction
-This guide will show you how to install the Magic Mirror software on a Raspberry Pi Zero W to make a useful dashboard which you can access from any computer in your house (or wherever you set this up). Use this guide in conjunction with my Youtube video.
+This guide will show you how to install the Magic Mirror software on a Raspberry Pi Zero W to make a useful dashboard which you can access from any computer in your house (or wherever you set this up). This guide assumes that you know the basics of Linux, though I believe it's still possible to follow this even as a complete beginner. Use this guide in conjunction with my Youtube video.
 
 Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero W connected to a monitor with the included Chromium browser as it ran too slow for my liking. Therefore, you'll need a separate computer to connect from to get to the MagicMirror site and it'll run much better. If you did, however, want to run the Pi connected to a monitor, just use a Raspberry Pi 3 or 4 (4 is kind of overkill) instead of the Pi Zero W, the instructions below will still apply.
 
@@ -40,6 +40,9 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
 - [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/)
   - An SSH client for connecting to the Pi
     - Note: If you're using a Mac, you can connect to the Pi using `ssh pi@<PiIPAddress>`
+- (Optional) [WinSCP](https://winscp.net/eng/index.php)
+  - An FTP client for transferring files to the Pi
+    - Note: You can use this to transfer configuration files directly to the Pi rather than having to create and edit files on the Pi with `vim`, `nano`, or other Linux text editors. Install this if you're uncomfortable in a Linux terminal.
 
 ***
 
@@ -53,6 +56,7 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
     - This file can just be an empty file named `ssh`; it basically just tells the Pi that it should turn on the SSH configuration so that you can remotely connect to it
 4. Plug in the SD card to the Raspberry Pi, connect it to a monitor, then power it on
   - Note: If you set up SSH, connect to the Pi via SSH (using PuTTy for Windows or Terminal for MacOS)
+    - To find the IP address, you can use an [IP scanner](https://angryip.org/download/#windows)
 
 ***
 
@@ -68,14 +72,81 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
         - Select **US**
       - Change WiFi Country
         - Select **US**
+    - **Boot Options**
+      - **Desktop/CLI**
+        - **Console Autologin**
     - (Optional) If you didn't upload the `ssh` on initial install, enable SSH in **Interface Options**
       - **Enable SSH**
-2. (Optional) If you just enabled SSH access, connect to the Pi via SSH now.
+2. Change password
+  - `sudo passwd pi`
+
+3. (Optional) If you just enabled SSH access, connect to the Pi via SSH now.
   - To find the IP address to connect to, run `ifconfig` on the Pi directly or use an [IP scanner](https://angryip.org/download/#windows) to find it.
 
 <div class="ui small rounded images">
   <img class="ui image" src="../images/ifconfig.png">
 </div>
 
-2. Install OS & software updates
+4. Install OS & software updates
   - `sudo apt update && sudo apt upgrade`
+
+5. Install software
+  - Node.JS (old version that is compatible with Pi Zero)
+    - `sudo wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-armv6l.tar.xz`
+    - `tar xvf node-v10.11.0-linux-armv6l.tar.xz`
+    - `cd node-v8.3.0-linux-armv6l`
+    - `sudo cp -R * /usr/local`
+    - `sudo reboot`
+  - Node Package Manager (used for installing components for MM modules)
+    - `sudo apt install npm`
+  - Git (for downloading and updating MM modules)
+    - `sudo apt install git`
+  - MagicMirror (the software this is all based on!)
+    - `cd ~/`
+    - `git clone https://github.com/MichMich/MagicMirror`
+    - `cd MagicMirror`
+    - `npm install -arch=armv7l`
+      - Note: If you get an error, delete `/home/pi/MagicMirror/node_modules` by using `sudo rm -rf /home/pi/MagicMirror/node_modules` and try `npm install`
+  - Vim (Text editor)
+    - `sudo apt install vim`
+  - Other tools for displaying the MagicMirror
+    - `sudo apt install chromium-browser`
+    - `sudo apt install xinit`
+    - `sudo apt install xorg`
+    - `sudo apt install matchbox`
+    - `sudo apt install unclutter`
+
+6. Create startup scripts
+  - Note: You can create these files outside of the Pi and transfer them to your Pi using WinSCP. Otherwise, you can create them directly:
+  - `sudo vim mmstart.sh`
+    - [mmstart.sh](../files/mmstart.sh)
+```
+#!/bin/bash
+cd ~/MagicMirror
+node serveronly &
+sleep 30
+xinit /home/pi/chromium_start.sh
+```
+  - `sudo vim chromium_start.sh`
+    - [chromium_start.sh](../files/chromium_start.sh)
+```
+#!/bin/sh
+unclutter &
+xset -dpms # disable DPMS (Energy Star) features.
+xset s off # disable screen saver
+xset s noblank # don’t blank the video device
+matchbox-window-manager &
+chromium-browser --incognito --kiosk http://localhost:8080/
+```
+  - Allow files to be executed
+    - `sudo chmod a+x mmstart.sh`
+    - `sudo chmod a+x chromium_start.sh`
+
+7. Create automatic startup
+  - `cd ~`
+  - `sudo npm install -g pm2`
+  - `pm2 startup`
+  - `pm2 start /home/pi/mmstart.sh`
+  - `pm2 save`
+  - To restart the MagicMirror service,
+    - `pm2 restart mmstart`
