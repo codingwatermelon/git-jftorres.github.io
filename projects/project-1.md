@@ -60,7 +60,7 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
 
 ***
 
-### Configuration
+### Setup and Basic Configuration
 1. Configure basic settings
   - `sudo raspi-config`
     - **Change Localisation Options**
@@ -83,7 +83,7 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
 3. (Optional) If you just enabled SSH access, connect to the Pi via SSH now.
   - To find the IP address to connect to, run `ifconfig` on the Pi directly or use an [IP scanner](https://angryip.org/download/#windows) to find it.
 
-<div class="ui small rounded images">
+<div class="ui large rounded images">
   <img class="ui image" src="../images/ifconfig.png">
 </div>
 
@@ -150,3 +150,7 @@ chromium-browser --incognito --kiosk http://localhost:8080/
   - `pm2 save`
   - To restart the MagicMirror service,
     - `pm2 restart mmstart`
+
+***
+
+### MagicMirror Configuration
