@@ -48,9 +48,9 @@ This guide will show you how to install the Magic Mirror software on a Raspberry
   `update_config=1`
   `country=US`
 
-  `network={``
-    `ssid="Your WiFi Network Name"``
-    `psk="Your WiFi Network Password"``
+  `network={`
+    `ssid="Your WiFi Network Name"`
+    `psk="Your WiFi Network Password"`
     `key_mgmt=WPA-PSK`
   `}`
   2. `ssh` - the SSH configuration file
