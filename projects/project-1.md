@@ -47,15 +47,17 @@ This guide will show you how to install the Magic Mirror software on a Raspberry
   `ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev`
   `update_config=1`
   `country=US`
-
+  ``
   `network={`
-    `ssid="Your WiFi Network Name"`
-    `psk="Your WiFi Network Password"`
-    `key_mgmt=WPA-PSK`
+  `  ssid="Your WiFi Network Name"`
+  `  psk="Your WiFi Network Password"`
+  `  key_mgmt=WPA-PSK`
   `}`
   2. `ssh` - the SSH configuration file
     - This file can just be an empty file named `ssh`; it basically just tells the Pi that it should turn on the SSH configuration so that you can remotely connect to it
 4. Plug in the SD card to the Raspberry Pi and power it on
+
+***
 
 ### Configuration
 1.
