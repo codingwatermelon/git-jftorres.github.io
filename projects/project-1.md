@@ -17,6 +17,8 @@ This guide will show you how to install the Magic Mirror software on a Raspberry
 
 Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero W connected to a monitor with the included Chromium browser as it ran too slow for my liking. Therefore, you'll need a separate computer to connect from to get to the MagicMirror site and it'll run much better. If you did, however, want to run the Pi connected to a monitor, just use a Raspberry Pi 3 or 4 (4 is kind of overkill) instead of the Pi Zero W, the instructions below will still apply.
 
+Another note: This guide is heavily borrowed from [this guide](http://emmanuelcontreras.com/how-to/how-to-create-a-magic-mirror-2-with-pi-zero-w/), though there are some differences in the major goals between our guides.
+
 ### Parts Required
 - A [Raspberry Pi Zero W](https://www.amazon.com/Raspberry-Pi-Zero-Wireless-model/dp/B06XFZC3BX/ref=sr_1_5?dchild=1&keywords=raspberry+pi+zero+w&qid=1589698278&sr=8-5) ($25)
 - A [5.0V - 2.5A power supply](https://www.amazon.com/CanaKit-Raspberry-Supply-Adapter-Listed/dp/B00MARDJZ4/ref=sr_1_1?dchild=1&keywords=raspberry+pi+zero+w+power+supply&qid=1589698376&sr=8-1) (~$10)
@@ -93,18 +95,23 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
     - `cd node-v8.3.0-linux-armv6l`
     - `sudo cp -R * /usr/local`
     - `sudo reboot`
+
   - Node Package Manager (used for installing components for MM modules)
     - `sudo apt install npm`
+
   - Git (for downloading and updating MM modules)
     - `sudo apt install git`
+
   - MagicMirror (the software this is all based on!)
     - `cd ~/`
     - `git clone https://github.com/MichMich/MagicMirror`
     - `cd MagicMirror`
     - `npm install -arch=armv7l`
       - Note: If you get an error, delete `/home/pi/MagicMirror/node_modules` by using `sudo rm -rf /home/pi/MagicMirror/node_modules` and try `npm install`
+
   - Vim (Text editor)
     - `sudo apt install vim`
+
   - Other tools for displaying the MagicMirror
     - `sudo apt install chromium-browser`
     - `sudo apt install xinit`
@@ -123,8 +130,10 @@ node serveronly &
 sleep 30
 xinit /home/pi/chromium_start.sh
 ```
+
   - `sudo vim chromium_start.sh`
     - [chromium_start.sh](../files/chromium_start.sh)
+
 ```
 #!/bin/sh
 unclutter &
@@ -134,6 +143,7 @@ xset s noblank # don’t blank the video device
 matchbox-window-manager &
 chromium-browser --incognito --kiosk http://localhost:8080/
 ```
+
   - Allow files to be executed
     - `sudo chmod a+x mmstart.sh`
     - `sudo chmod a+x chromium_start.sh`
@@ -144,9 +154,26 @@ chromium-browser --incognito --kiosk http://localhost:8080/
   - `pm2 startup`
   - `pm2 start /home/pi/mmstart.sh`
   - `pm2 save`
+
   - To restart the MagicMirror service,
     - `pm2 restart mmstart`
 
 ***
 
 ### MagicMirror Configuration
+1. Networking
+  - Allow your computer to connect to the Pi
+  - In `~/MagicMirror/config/config.js` (either use `vim` or `nano` to edit directly or WinSCP to transfer the file here),
+
+```
+var config = {
+  address: "<yourPiIP (use ifconfig)>"
+  port: 8080,
+  ipWhitelist: ["<yourPiIP>", "<yourComputerIP (use ipconfig for Windows or ifconfig for Mac)>"]
+}
+```
+
+  - Note: I'll provide my full `config.js` file at the end of this guide
+
+2. Modules
+  - Developer Tools is your friend
