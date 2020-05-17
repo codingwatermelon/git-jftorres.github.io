@@ -70,7 +70,7 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
         - Select your timezone
       - **Change keyboard layout**
         - Select **US**
-      - Change WiFi Country
+      - **Change WiFi Country**
         - Select **US**
     - **Boot Options**
       - **Desktop/CLI**
@@ -81,11 +81,7 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
   - `sudo passwd pi`
 
 3. (Optional) If you just enabled SSH access, connect to the Pi via SSH now.
-  - To find the IP address to connect to, run `ifconfig` on the Pi directly or use an [IP scanner](https://angryip.org/download/#windows) to find it.
-
-<div class="ui large rounded images">
-  <img class="ui image" src="../images/ifconfig.png">
-</div>
+  - To find the IP address to connect to, run `ifconfig` ([picture](../images/ifconfig.png)) on the Pi directly or use an [IP scanner](https://angryip.org/download/#windows) to find it.
 
 4. Install OS & software updates
   - `sudo apt update && sudo apt upgrade`
