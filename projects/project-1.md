@@ -225,5 +225,5 @@ var config = {
 
 4. Troubleshooting
   - Developer Tools is your friend
-    - You can use developer tools to find syntax errors in the `config.js` file or to just figure out what a module is doing
-    - Right click on the webpage, *Inspect Element*, then open the *Console* tab
+      - You can use developer tools to find syntax errors in the `config.js` file or to just figure out what a module is doing
+      - Right click on the webpage, *Inspect Element*, then open the *Console* tab
