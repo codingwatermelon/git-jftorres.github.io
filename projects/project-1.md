@@ -227,3 +227,10 @@ var config = {
   - Developer Tools is your friend
       - You can use developer tools to find syntax errors in the `config.js` file or to just figure out what a module is doing
       - Right click on the webpage, *Inspect Element*, then open the *Console* tab
+
+***
+
+### My MagicMirror config file
+As promised, here's my MagicMirror config file (with personal information stripped). Hope that it helps you!
+
+[config.js](../files/config.js)
