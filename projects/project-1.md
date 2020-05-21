@@ -87,7 +87,7 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
   - To find the IP address to connect to, run `ifconfig` ([picture](../images/ifconfig.png)) on the Pi directly or use an [IP scanner](https://angryip.org/download/#windows) to find it.
 4. Install OS & software updates
   - `sudo apt update && sudo apt upgrade`
-5. Test Install software
+5. Install software
     - Node.JS (old version that is compatible with Pi Zero)
       - `sudo wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-armv6l.tar.xz`
       - `tar xvf node-v10.11.0-linux-armv6l.tar.xz`
@@ -141,14 +141,13 @@ chromium-browser --incognito --kiosk http://localhost:8080/
 
 7. Create automatic startup
   - Setup pm2
-    - `cd ~`
-    - `sudo npm install -g pm2`
-    - `pm2 startup`
-    - `pm2 start /home/pi/mmstart.sh`
-    - `pm2 save`
-
+      - `cd ~`
+      - `sudo npm install -g pm2`
+      - `pm2 startup`
+      - `pm2 start /home/pi/mmstart.sh`
+      - `pm2 save`
   - To restart the MagicMirror service,
-    - `pm2 restart mmstart`
+      - `pm2 restart mmstart`
 
 ***
 
@@ -183,19 +182,16 @@ var config = {
        - [on-this-day](https://github.com/elliefairholm/on-this-day) - a module for displaying a random thing that happened sometime in the past on this day
        - [MMM-BackgroundSlideshow](https://github.com/darickc/MMM-BackgroundSlideshow) - a module to display a picture in the background of the dashboard
        - [MMM-AVStock](https://github.com/lavolp3/MMM-AVStock) - a module used to display stock prices
-
   - To install modules, enter your `modules` folder
     - `cd /home/pi/MagicMirror/modules`
-
   - Clone the Github repository for the module you want to install
     - `git clone <https://github.com/<module>`
     - e.g., `git clone https://github.com/lavolp3/MMM-AVStock`
-
   - Install dependencies for any Node components in the module
     - `cd <module>`
     - e.g., `cd MMM-AVStock`
     - `npm install`
-    
+
 3. Configuring Modules
   - After installing, you'll need to edit the `config.js` file accordingly
     - The recommended configuration settings are usually included in the Github repository README file
