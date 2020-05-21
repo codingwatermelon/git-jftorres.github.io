@@ -19,6 +19,8 @@ Note: for this project, I wasn't able to run the MagicMirror site on the Pi Zero
 
 Another note: This guide is heavily borrowed from [this guide](http://emmanuelcontreras.com/how-to/how-to-create-a-magic-mirror-2-with-pi-zero-w/), though there are some differences in the major goals between our guides.
 
+***
+
 ### Parts Required
 - A [Raspberry Pi Zero W](https://www.amazon.com/Raspberry-Pi-Zero-Wireless-model/dp/B06XFZC3BX/ref=sr_1_5?dchild=1&keywords=raspberry+pi+zero+w&qid=1589698278&sr=8-5) ($25)
 - A [5.0V - 2.5A power supply](https://www.amazon.com/CanaKit-Raspberry-Supply-Adapter-Listed/dp/B00MARDJZ4/ref=sr_1_1?dchild=1&keywords=raspberry+pi+zero+w+power+supply&qid=1589698376&sr=8-1) (~$10)
@@ -81,13 +83,10 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
       - **Enable SSH**
 2. Change password
   - `sudo passwd pi`
-
 3. (Optional) If you just enabled SSH access, connect to the Pi via SSH now.
   - To find the IP address to connect to, run `ifconfig` ([picture](../images/ifconfig.png)) on the Pi directly or use an [IP scanner](https://angryip.org/download/#windows) to find it.
-
 4. Install OS & software updates
   - `sudo apt update && sudo apt upgrade`
-
 5. Install software
   - Node.JS (old version that is compatible with Pi Zero)
     - `sudo wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-armv6l.tar.xz`
@@ -95,7 +94,6 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
     - `cd node-v8.3.0-linux-armv6l`
     - `sudo cp -R * /usr/local`
     - `sudo reboot`
-
   - Node Package Manager (used for installing components for MM modules)
     - `sudo apt install npm`
 
