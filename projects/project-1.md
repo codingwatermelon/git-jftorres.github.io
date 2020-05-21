@@ -189,11 +189,11 @@ var config = {
         - `npm install`
 3. Configuring Modules
   - After installing, you'll need to edit the `config.js` file accordingly
-    - The recommended configuration settings are usually included in the Github repository README file
+        - The recommended configuration settings are usually included in the Github repository README file
   - Edit the `config.js` file
-    - `vim /home/pi/MagicMirror/config/config.js`
+        - `vim /home/pi/MagicMirror/config/config.js`
   - Add any module configuration into the file, following the configuration structure
-    - e.g.,
+        - For example,
 ```
 {
   //disabled:true,
@@ -205,10 +205,8 @@ var config = {
   }
 },
 ```
-
   - After finished with editing the file, restart the MagicMirror software
-    - `pm2 restart mmstart`
-
+        - `pm2 restart mmstart`
 4. Troubleshooting
   - Developer Tools is your friend
       - You can use developer tools to find syntax errors in the `config.js` file or to just figure out what a module is doing
