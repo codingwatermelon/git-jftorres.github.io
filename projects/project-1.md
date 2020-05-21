@@ -146,6 +146,7 @@ chromium-browser --incognito --kiosk http://localhost:8080/
     - `pm2 startup`
     - `pm2 start /home/pi/mmstart.sh`
     - `pm2 save`
+
   - To restart the MagicMirror service,
     - `pm2 restart mmstart`
 
@@ -177,20 +178,24 @@ var config = {
 2. Installing Modules
   - [Click here](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules) for a list of all MagicMirror 3rd party modules
   - The 3rd party modules that I chose to use were:
-     - [MMM-MicrosoftToDo](https://github.com/thobach/MMM-MicrosoftToDo/) - a module to integrate your MS ToDo lists
-     - [MMM-SmartWebDisplay](https://github.com/AgP42/MMM-SmartWebDisplay) - a module you can use to display web pages in an embedded frame (I used this to display my security camera feed)
-     - [on-this-day](https://github.com/elliefairholm/on-this-day) - a module for displaying a random thing that happened sometime in the past on this day
-     - [MMM-BackgroundSlideshow](https://github.com/darickc/MMM-BackgroundSlideshow) - a module to display a picture in the background of the dashboard
-     - [MMM-AVStock](https://github.com/lavolp3/MMM-AVStock) - a module used to display stock prices
+       - [MMM-MicrosoftToDo](https://github.com/thobach/MMM-MicrosoftToDo/) - a module to integrate your MS ToDo lists
+       - [MMM-SmartWebDisplay](https://github.com/AgP42/MMM-SmartWebDisplay) - a module you can use to display web pages in an embedded frame (I used this to display my security camera feed)
+       - [on-this-day](https://github.com/elliefairholm/on-this-day) - a module for displaying a random thing that happened sometime in the past on this day
+       - [MMM-BackgroundSlideshow](https://github.com/darickc/MMM-BackgroundSlideshow) - a module to display a picture in the background of the dashboard
+       - [MMM-AVStock](https://github.com/lavolp3/MMM-AVStock) - a module used to display stock prices
+
   - To install modules, enter your `modules` folder
     - `cd /home/pi/MagicMirror/modules`
+
   - Clone the Github repository for the module you want to install
     - `git clone <https://github.com/<module>`
     - e.g., `git clone https://github.com/lavolp3/MMM-AVStock`
+
   - Install dependencies for any Node components in the module
     - `cd <module>`
     - e.g., `cd MMM-AVStock`
     - `npm install`
+    
 3. Configuring Modules
   - After installing, you'll need to edit the `config.js` file accordingly
     - The recommended configuration settings are usually included in the Github repository README file
