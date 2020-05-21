@@ -146,6 +146,7 @@ chromium-browser --incognito --kiosk http://localhost:8080/
       - `pm2 startup`
       - `pm2 start /home/pi/mmstart.sh`
       - `pm2 save`
+      
   - To restart the MagicMirror service,
       - `pm2 restart mmstart`
 
