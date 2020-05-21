@@ -165,9 +165,7 @@ var config = {
 ```
   - **Important:** Whenever you edit the `config.js` file, you'll need to restart the MagicMirror software
     - `pm2 restart mmstart`
-
   - Note: I'll provide my full `config.js` file at the end of this guide
-
   - To connect to the dashboard, open a web browser and type the following into the address bar:
     - `http://<PiIPAddress>:8080`
     - If your MagicMirror doesn't come up, you have a problem with your networking or the MagicMirror software isn't started
