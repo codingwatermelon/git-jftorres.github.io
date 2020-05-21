@@ -140,12 +140,12 @@ chromium-browser --incognito --kiosk http://localhost:8080/
       - `sudo chmod a+x chromium_start.sh`
 
 7. Create automatic startup
-  - `cd ~`
-  - `sudo npm install -g pm2`
-  - `pm2 startup`
-  - `pm2 start /home/pi/mmstart.sh`
-  - `pm2 save`
-
+  - Setup pm2
+    - `cd ~`
+    - `sudo npm install -g pm2`
+    - `pm2 startup`
+    - `pm2 start /home/pi/mmstart.sh`
+    - `pm2 save`
   - To restart the MagicMirror service,
     - `pm2 restart mmstart`
 
