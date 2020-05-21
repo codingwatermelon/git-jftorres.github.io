@@ -179,14 +179,14 @@ var config = {
        - [MMM-BackgroundSlideshow](https://github.com/darickc/MMM-BackgroundSlideshow) - a module to display a picture in the background of the dashboard
        - [MMM-AVStock](https://github.com/lavolp3/MMM-AVStock) - a module used to display stock prices
   - To install modules, enter your `modules` folder
-      - `cd /home/pi/MagicMirror/modules`
+        - `cd /home/pi/MagicMirror/modules`
   - Clone the Github repository for the module you want to install
-      - `git clone <https://github.com/<module>`
-      - e.g., `git clone https://github.com/lavolp3/MMM-AVStock`
+        - `git clone <https://github.com/<module>`
+        - e.g., `git clone https://github.com/lavolp3/MMM-AVStock`
   - Install dependencies for any Node components in the module
-      - `cd <module>`
-      - e.g., `cd MMM-AVStock`
-      - `npm install`
+        - `cd <module>`
+        - e.g., `cd MMM-AVStock`
+        - `npm install`
 3. Configuring Modules
   - After installing, you'll need to edit the `config.js` file accordingly
     - The recommended configuration settings are usually included in the Github repository README file
