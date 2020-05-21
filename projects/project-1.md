@@ -96,20 +96,16 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
       - `sudo reboot`
     - Node Package Manager (used for installing components for MM modules)
       - `sudo apt install npm`
-
     - Git (for downloading and updating MM modules)
       - `sudo apt install git`
-
     - MagicMirror (the software this is all based on!)
       - `cd ~/`
       - `git clone https://github.com/MichMich/MagicMirror`
       - `cd MagicMirror`
       - `npm install -arch=armv7l`
         - Note: If you get an error, delete `/home/pi/MagicMirror/node_modules` by using `sudo rm -rf /home/pi/MagicMirror/node_modules` and try `npm install`
-
     - Vim (Text editor)
       - `sudo apt install vim`
-
     - Other tools for displaying the MagicMirror
       - `sudo apt install chromium-browser`
       - `sudo apt install xinit`
@@ -119,9 +115,8 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
 
 6. Create startup scripts
   - Note: You can create these files outside of the Pi and transfer them to your Pi using WinSCP. Otherwise, you can create them directly:
-  - `sudo vim mmstart.sh`
-    - [mmstart.sh](../files/mmstart.sh)
-
+    - `sudo vim mmstart.sh`
+      - [mmstart.sh](../files/mmstart.sh)
 ```
 #!/bin/bash
 cd ~/MagicMirror
@@ -129,10 +124,8 @@ node serveronly &
 sleep 30
 xinit /home/pi/chromium_start.sh
 ```
-
-  - `sudo vim chromium_start.sh`
-    - [chromium_start.sh](../files/chromium_start.sh)
-
+    - `sudo vim chromium_start.sh`
+      - [chromium_start.sh](../files/chromium_start.sh)
 ```
 #!/bin/sh
 unclutter &
@@ -142,10 +135,9 @@ xset s noblank # don’t blank the video device
 matchbox-window-manager &
 chromium-browser --incognito --kiosk http://localhost:8080/
 ```
-
-  - Allow files to be executed
-    - `sudo chmod a+x mmstart.sh`
-    - `sudo chmod a+x chromium_start.sh`
+    - Allow files to be executed
+      - `sudo chmod a+x mmstart.sh`
+      - `sudo chmod a+x chromium_start.sh`
 
 7. Create automatic startup
   - `cd ~`
