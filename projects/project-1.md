@@ -87,35 +87,35 @@ Another note: This guide is heavily borrowed from [this guide](http://emmanuelco
   - To find the IP address to connect to, run `ifconfig` ([picture](../images/ifconfig.png)) on the Pi directly or use an [IP scanner](https://angryip.org/download/#windows) to find it.
 4. Install OS & software updates
   - `sudo apt update && sudo apt upgrade`
-5. Install software
-  - Node.JS (old version that is compatible with Pi Zero)
-    - `sudo wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-armv6l.tar.xz`
-    - `tar xvf node-v10.11.0-linux-armv6l.tar.xz`
-    - `cd node-v8.3.0-linux-armv6l`
-    - `sudo cp -R * /usr/local`
-    - `sudo reboot`
-  - Node Package Manager (used for installing components for MM modules)
-    - `sudo apt install npm`
+5. Test Install software
+    - Node.JS (old version that is compatible with Pi Zero)
+      - `sudo wget https://nodejs.org/dist/v10.16.0/node-v10.16.0-linux-armv6l.tar.xz`
+      - `tar xvf node-v10.11.0-linux-armv6l.tar.xz`
+      - `cd node-v8.3.0-linux-armv6l`
+      - `sudo cp -R * /usr/local`
+      - `sudo reboot`
+    - Node Package Manager (used for installing components for MM modules)
+      - `sudo apt install npm`
 
-  - Git (for downloading and updating MM modules)
-    - `sudo apt install git`
+    - Git (for downloading and updating MM modules)
+      - `sudo apt install git`
 
-  - MagicMirror (the software this is all based on!)
-    - `cd ~/`
-    - `git clone https://github.com/MichMich/MagicMirror`
-    - `cd MagicMirror`
-    - `npm install -arch=armv7l`
-      - Note: If you get an error, delete `/home/pi/MagicMirror/node_modules` by using `sudo rm -rf /home/pi/MagicMirror/node_modules` and try `npm install`
+    - MagicMirror (the software this is all based on!)
+      - `cd ~/`
+      - `git clone https://github.com/MichMich/MagicMirror`
+      - `cd MagicMirror`
+      - `npm install -arch=armv7l`
+        - Note: If you get an error, delete `/home/pi/MagicMirror/node_modules` by using `sudo rm -rf /home/pi/MagicMirror/node_modules` and try `npm install`
 
-  - Vim (Text editor)
-    - `sudo apt install vim`
+    - Vim (Text editor)
+      - `sudo apt install vim`
 
-  - Other tools for displaying the MagicMirror
-    - `sudo apt install chromium-browser`
-    - `sudo apt install xinit`
-    - `sudo apt install xorg`
-    - `sudo apt install matchbox`
-    - `sudo apt install unclutter`
+    - Other tools for displaying the MagicMirror
+      - `sudo apt install chromium-browser`
+      - `sudo apt install xinit`
+      - `sudo apt install xorg`
+      - `sudo apt install matchbox`
+      - `sudo apt install unclutter`
 
 6. Create startup scripts
   - Note: You can create these files outside of the Pi and transfer them to your Pi using WinSCP. Otherwise, you can create them directly:
