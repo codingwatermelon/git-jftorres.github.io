@@ -146,7 +146,7 @@ chromium-browser --incognito --kiosk http://localhost:8080/
       - `pm2 startup`
       - `pm2 start /home/pi/mmstart.sh`
       - `pm2 save`
-      
+
   - To restart the MagicMirror service,
       - `pm2 restart mmstart`
 
@@ -156,7 +156,6 @@ chromium-browser --incognito --kiosk http://localhost:8080/
 1. Networking
   - Allow your computer to connect to the Pi
   - In `~/MagicMirror/config/config.js` (either use `vim` or `nano` to edit directly or WinSCP to transfer the file here),
-
 ```
 var config = {
   address: "<yourPiIP (use ifconfig)>"
@@ -164,7 +163,6 @@ var config = {
   ipWhitelist: ["<yourPiIP>", "<yourComputerIP (use ipconfig for Windows or ifconfig for Mac)>"]
 }
 ```
-
   - **Important:** Whenever you edit the `config.js` file, you'll need to restart the MagicMirror software
     - `pm2 restart mmstart`
 
@@ -174,7 +172,6 @@ var config = {
     - `http://<PiIPAddress>:8080`
     - If your MagicMirror doesn't come up, you have a problem with your networking or the MagicMirror software isn't started
     - **Note:** You should open the browser in Private or Incognito mode because I've found that in Firefox, it saves tons of trash data into the Firefox profiles folder if you don't which will quickly fill up your drive space.
-
 2. Installing Modules
   - [Click here](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules) for a list of all MagicMirror 3rd party modules
   - The 3rd party modules that I chose to use were:
