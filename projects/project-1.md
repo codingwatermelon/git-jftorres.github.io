@@ -164,12 +164,12 @@ var config = {
 }
 ```
   - **Important:** Whenever you edit the `config.js` file, you'll need to restart the MagicMirror software
-    - `pm2 restart mmstart`
-  - Note: I'll provide my full `config.js` file at the end of this guide
-  - To connect to the dashboard, open a web browser and type the following into the address bar:
-    - `http://<PiIPAddress>:8080`
-    - If your MagicMirror doesn't come up, you have a problem with your networking or the MagicMirror software isn't started
-    - **Note:** You should open the browser in Private or Incognito mode because I've found that in Firefox, it saves tons of trash data into the Firefox profiles folder if you don't which will quickly fill up your drive space.
+      - `pm2 restart mmstart`
+    - Note: I'll provide my full `config.js` file at the end of this guide
+    - To connect to the dashboard, open a web browser and type the following into the address bar:
+      - `http://<PiIPAddress>:8080`
+      - If your MagicMirror doesn't come up, you have a problem with your networking or the MagicMirror software isn't started
+      - **Note:** You should open the browser in Private or Incognito mode because I've found that in Firefox, it saves tons of trash data into the Firefox profiles folder if you don't which will quickly fill up your drive space.
 2. Installing Modules
   - [Click here](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules) for a list of all MagicMirror 3rd party modules
   - The 3rd party modules that I chose to use were:
